@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>天赐早餐,随机享用</h1>
+    <div id="food">
+        <div id="close"></div>
+        <ul>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_1.jpg"/></dt>
+                    <dd>一等奖</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_2.jpg"/></dt>
+                    <dd>二等奖</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_3.jpg"/></dt>
+                    <dd>三等奖</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_4.jpg"/></dt>
+                    <dd>四等奖</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_5.jpg"/></dt>
+                    <dd>五等奖</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_6.jpg"/></dt>
+                    <dd>六等奖</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_7.jpg"/></dt>
+                    <dd>七等奖</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><img src="images/job1_8.jpg"/></dt>
+                    <dd>八等奖</dd>
+                </dl>
+            </li>
+            <li class="nine">
+                <dl class="mid">
+                    <dt class="middle" id="btn">
+                        <img src="images/job1_9.jpg"/ id="pic">
+                    </dt>
+                    <dd>开始</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        //初始化变量
+        var oLi=document.getElementsByTagName("li");
+        var oBtn=document.getElementById("btn");
+        var oPic=document.getElementById("pic");
+        var num=i=t=0;//计数器(顺时针)
+
+        oBtn.onclick=function(){
+            oPic.style.transform="scale(0.6)";
+            oPic.style.transition="1s";
+
+            view();//动画效果视图
+        }
+
+        function view(){
+            num=parseInt(Math.random()*10 + 20);//确定顺时针循环li个数(固定)
+            console.log("固定"+num);
+
+            //一.确定递归次数
+            if(i<num){//i:已完成的li循环个数(变化)
+                i++;//每循环一个li标签 +1
+                setTimeout(view,200);
+                console.log("动态"+i);
+            }else{
+                i=0;//为下一次抽奖做准备
+                oPic.style.transform="scale(0.8)";
+                oPic.style.transition="1s";
+            }
+
+
+            //二.动画  t:顺时针循环中每个li标签的下标
+            if(t<oLi.length-1){//先清除所有,再设置一个
+                for(var j=0; j<oLi.length-1; j++){
+                    oLi[j].style.border = "2px solid #000";
+                    oLi[j].style.background = "#fff";
+                }
+                oLi[t].style.border = "2px solid #f00";
+                oLi[t].style.background = "rgba(255,0,0,.4)";
+                t++;
+            }else{
+                t=0;
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
