@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container{width: 400px; height: 600px;margin: 10px auto;position: relative;}
+        #fix{width: 140px;position: absolute;top: 98px;left: 145px;}
+     
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div >
+            <img src="images/index.png" alt="" id="rotate">
+        </div>
+        <div id="fix">
+            <img src="images/point.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var oRotate = document.getElementById("rotate");
+        var oFix = document.getElementById("fix");
+        
+        
+        var arr=['30元免费流量包','100元免费流量包','2猫币','一等奖','10猫币','谢谢参与','5猫币','10元免费流量包','20元免费流量包','20猫币'];
+        
+        oFix.onclick = function(){
+            
+            var n = parseInt(Math.random()*10);
+            var i = -36*n-720+"deg";
+            oRotate.style.transform = "rotate("+i+")";
+            oRotate.style.transition = "2s";
+            setTimeout(function(){
+                alert(arr[n]);
+                location.reload();
+            },2500)
+        }
+
+        
+        // var i=n=0;
+            // var n=parseInt(Math.random()*10);
+            // var i=-36*n+"deg";
+            // oRotate.style.transform="rotate('+i+')";
+        
+    
+
+    </script>
+</body>
+</html>
