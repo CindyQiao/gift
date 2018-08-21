@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container{width: 400px; height: 600px;margin: 10px auto;position: relative;}
+        #fix{width: 140px;position: absolute;top: 98px;left: 145px;}
+     
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div >
+            <img src="images/index.png" alt="" id="rotate">
+        </div>
+        <div id="fix">
+            <img src="images/point.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var oRotate = document.getElementById("rotate");
+        var oFix = document.getElementById("fix");
+        var i=n=0;
+        var index=0;
+        var arr=['30元免费流量包','100元免费流量包','2猫币','一等奖','10猫币','谢谢参与','5猫币','10元免费流量包','20元免费流量包','20猫币'];
+        oFix.onclick=function(){
+            view();
+        }
+        
+        
+        function view(){
+            n=parseInt(Math.random()*20)+10;           
+            if(i<=n){
+                i++;
+                var deg=-36*i+"deg";
+                oRotate.style.transform="rotate("+deg+")";
+                
+                index++;
+                if(index>=10){
+                    index=0;
+                }
+                setTimeout(view,100);
+            }
+            else
+            {   alert("恭喜您获得"+arr[index]+"!");
+                location.reload;
+                index=0;
+                i=0;
+            }
+        }
+
+    </script>
+</body>
+</html>
