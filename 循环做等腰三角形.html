@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num=10;
+        for(var j=1; j<=num; j++){//外层循环:+1
+            for(s=1; s<=num-j; s++){//空格数递减
+            document.write("&nbsp;");
+            }
+
+            for(var i=1; i<=j; i++){//数字递增
+            document.write(i + "&nbsp;");
+            }
+
+            document.write("<br/>");
+        }
+        
+    </script>
+</body>
+</html>
