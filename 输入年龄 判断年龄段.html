@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{width: 300px; height: 30px;border: 1px solid #666;}
+    </style>
+</head>
+<body>
+    <input type="text" id="input" placeholder="请输入年龄"/>
+    <button id="btn">确定</button>
+    <p id="res"></p>
+
+
+    <script>
+        var oInput=document.getElementById("input");
+        var oBtn=document.getElementById("btn");
+        var oRes=document.getElementById("res");
+
+        oBtn.onclick=function(){
+            var a=oInput.value;
+            if(a<14){
+                oRes.innerHTML="您现在处于儿童阶段";
+                oRes.style.color="aqua";
+            }else if(a>=14 && a<24){
+                oRes.innerHTML="您现在处于青少年阶段";
+                oRes.style.color="red";
+            }else if(a>=24 && a<40){
+                oRes.innerHTML="您现在处于青年阶段";
+                oRes.style.color="blue";
+            }else if(a>=40 && a<60){
+                oRes.innerHTML="您现在处于中年阶段";
+                oRes.style.color="green";
+            }else if(a>=60){
+                oRes.innerHTML="您现在处于老年阶段";
+                oRes.style.color="black";
+            }
+        }
+    </script>
+</body>
+</html>
