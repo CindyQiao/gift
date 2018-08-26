@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.msg{border: 40px groove #ff0; background: #0ff; text-shadow: 0 0 2px #999;}
+	</style>
+</head>
+<body>
+	<button id="big">+</button>
+	<button id="small">-</button>
+	<button id="blue">Blue</button>
+	<button id="btn">移除</button>
+
+	
+	<p id="msg">七十亿分之一,七十亿分之一,七十亿分之一,七十亿分之一,七十亿分之一,七十亿分之一.
+	七十亿分之一,七十亿分之一,七十亿分之一,七十亿分之一,七十亿分之一,七十亿分之一,千分之一,挥毫泼墨</p>
+
+
+	<script>
+		var oBig = document.getElementById("big");
+		var oSmall = document.getElementById("small");
+		var oMsg = document.getElementById("msg");
+		var oBlue = document.getElementById("blue");
+		var oBtn = document.getElementById("btn");
+
+		var num=16;
+
+		oBig.onclick = function(){
+			//num=num+2;
+			num += 2;
+			console.log(num);
+			oMsg.style.fontSize= num + "px";
+			
+		}
+
+		oSmall.onclick = function(){
+			num -= 2;
+			console.log(num);
+			oMsg.style.fontSize= num + "px";
+		}
+
+		oBlue.onclick = function(){
+			oMsg.className= "msg";
+		}
+		oBtn.onclick = function(){
+			oMsg.className= "";
+		}
+	</script>
+</body>
+</html>
