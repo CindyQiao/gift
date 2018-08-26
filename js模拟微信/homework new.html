@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div,input{margin: 0;padding: 0;}
+	#container{width: 289px; height: 594px;background:url(images/phonebg.png) no-repeat center center; margin: 60px auto;}
+	#msg1{width: 289px;height: 464px;font-size: 20px;overflow: auto;color: black;font-family: "楷体"}
+
+	#innermsg{margin-top: 90px;margin-left: 20px}
+	.right{text-align: right;vertical-align: 15px;margin-right: 28px;}
+	
+	input{outline: none;height: 30px;border-radius: 5px;width: 140px;border: 1px solid #ddd;margin-bottom: 2px}
+
+	img{margin-left:10px;width: 26px; border: 1px solid #ddd; border-radius: 4px;position: relative;top: 10px}
+	#footer{width: 242px;border-top: 1px solid #ddd;margin-left: 24px;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="msg1">
+			<div id="innermsg"></div>
+		</div>
+	<div id="footer">
+
+		<img src="images/a.jpg" id="img1">
+		<input type="text" id="input1" />
+		<button id="btn1">发送</button>
+		<br/>
+	</div>
+	</div>
+
+	<script>
+		var oMsg1=document.getElementById("msg1");
+		var oImg1=document.getElementById("img1");
+		var oInput1=document.getElementById("input1");
+		var oBtn1=document.getElementById("btn1");
+		var oInnerMsg=document.getElementById("innermsg");
+		var t=null;
+
+		var onOff=false;
+		oImg1.src="images/a.png";
+
+		
+		oBtn1.onclick = function(){
+			
+			t=oInput1.value;
+			oInput1.value=null;
+			
+			if(!onOff) {
+
+				oInnerMsg.innerHTML += '<img src="'+oImg1.src+'">' + t + '<br/>';
+			}else{
+
+				oInnerMsg.innerHTML += '<div class="right">'+t + '<img src="'+oImg1.src+'">' +'</div>';
+			}
+			}
+		oImg1.onclick = function(){
+			if (onOff) {
+				oImg1.src="images/a.png";
+			}else{
+				oImg1.src="images/c.png";
+			}
+			onOff=!onOff;
+		 }
+
+
+	</script>
+</body>
+</html>
