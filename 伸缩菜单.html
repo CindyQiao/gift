@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        main,
+        div,
+        ul,
+        li {
+            margin: 0;
+            padding: 0
+        }
+
+        div {
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        main {
+            width: 100px;
+            height: 30px;
+            background: #0DDEE0;
+            color: white;
+            margin-top: 4px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 30px
+        }
+
+        main:hover {
+            background: #0D9898;
+        }
+
+        li {
+            list-style: none;
+            width: 100px;
+            height: 30px;
+            font: 14px/30px "黑体";
+            text-align: center;
+            margin-top: -1px;
+            cursor: pointer;
+            background: #FA08E0;
+            color: white;
+            margin-top: 1px
+        }
+
+        ul {
+            display: none;
+            width: 100px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <main>
+            ▶考勤管理
+        </main>
+        <ul>
+            <li>日常考勤</li>
+            <li>请假申请</li>
+            <li>加班</li>
+            <li>出差</li>
+        </ul>
+        <main>
+            ▶信息中心
+        </main>
+        <ul>
+            <li>通知公告</li>
+            <li>公司新闻</li>
+            <li>规章制度</li>
+            <li>内部邮件</li>
+        </ul>
+        <main>
+            ▶合同管理
+        </main>
+        <ul>
+            <li>内部合同</li>
+            <li>外部合同</li>
+            <li>到期合同</li>
+            <li>未签合同</li>
+        </ul>
+        <main>
+            ▶人事流程
+        </main>
+        <ul>
+            <li>职工保险</li>
+            <li>职工升职</li>
+            <li>薪资计划</li>
+            <li>员工福利</li>
+            
+        </ul>
+        <main>
+                ▶客户管理
+            </main>
+            <ul>
+                <li>企业客户</li>
+                <li>小区客户</li>
+                <li>外地客户</li>
+                <li>VIP客户</li>
+            </ul>
+    </div>
+    <script>
+        var oMains = document.getElementsByTagName("main");
+        var oUls = document.getElementsByTagName("ul");
+
+        for(i=0; i<oMains.length; i++){
+            var bool = true;
+            (function(i){
+                oMains[i].onclick = function () {
+            if (bool) {
+                oUls[i].style.display = "block";
+                oMains[i].innerHTML = "▼考勤管理"
+            } else {
+                oUls[i].style.display = "none";
+                oMains[i].innerHTML = "▶考勤管理"
+            }
+            bool = !bool;
+        }
+            })(i);
+        
+        }
+        
+
+
+
+    </script>
+</body>
+
+</html>
