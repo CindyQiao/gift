@@ -1,0 +1,61 @@
+body,div,ul,li,p,input,h6,h4,header,footer{margin: 0; padding: 0}
+
+li{list-style: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: ".";/*加一段内容*/
+	display: block;/*让生成的元素以块级元素显示，占满剩余空间*/
+	height: 0; /*避免生成的内容破坏原有布局高度*/
+	clear: both;/*清除浮动*/
+	visibility: hidden;/*让生成的内容不可见*/
+	}
+.clearfix{zoom:1;}
+
+
+
+
+header{width: 94%; margin: 10px auto; overflow: hidden;}
+header a img{width: 5%; margin-top: 5px}
+header span{ vertical-align: 3px; margin-left: 25%}
+
+
+main{width: 94%; margin: 50px auto; overflow: hidden;}
+main h2{text-align: center;font-weight: normal;}
+main input{font-size: 1.2rem; width: 100%; border: none; border-bottom: 1px solid #ddd; padding: 8px 0; outline: none; margin-top: 20px}
+main a input{margin-top: 50px; border-radius: 8px;background: #FF6700;color: white;letter-spacing: 2px}
+div{width: 90%; margin: 10px auto; overflow: hidden;font-size: 0.8rem;color: #9F9F9F;
+}
+div span{color: white;overflow: hidden;background: #FF6700;border-radius: 50%;padding: 0 3px}
+div a{color: #9F9F9F;}
+footer{width: 86%;overflow: hidden;margin: 30px auto}
+footer ul li{float: left; margin-left: 2%}
+footer ul li a{text-decoration: none;color: black;font-size: 0.9rem}
+footer ul li:hover a{color:#9B9B9B }
+
+
+
+@media (min-width: 360px) {
+	header span{margin-left: 30%}
+	footer{margin: 70px auto}
+	footer ul li{ margin-left: 4%}
+}
+@media (min-width: 410px) {
+	header span{margin-left: 32%}
+	div{margin: 10px auto; font-size: 0.9rem;}
+	footer{margin: 100px auto}
+	footer ul li{margin-left: 4%}
+	footer ul li a{font-size: 1rem}
+
+}
+@media (min-width: 768px) {
+	header span{  margin-left: 33%;font-size: 1.5rem}
+	main{margin: 80px auto;}
+	main h2{font-size:2.2rem}
+	main input{font-size: 1.5rem;padding: 22px 0; }
+	main a input{margin-top: 100px;}
+	div{margin: 120px auto; font-size: 1.4rem;}
+	div span{padding: 0 5px}
+    footer ul{margin-left: 13%}
+	footer ul li{margin-left: 3%}
+	footer ul li a{font-size: 1.5rem}
+}

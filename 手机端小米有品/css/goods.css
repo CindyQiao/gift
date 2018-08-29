@@ -1,0 +1,95 @@
+body,div,ul,li,p,input,h6,h3,h1,h2,h5,h4,header,footer,img{margin: 0; padding: 0}
+a{text-decoration: none;}
+li{list-style: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: ".";/*加一段内容*/
+	display: block;/*让生成的元素以块级元素显示，占满剩余空间*/
+	height: 0; /*避免生成的内容破坏原有布局高度*/
+	clear: both;/*清除浮动*/
+	visibility: hidden;/*让生成的内容不可见*/
+	}
+.clearfix{zoom:1;}
+
+body{background: #F8F8F8;}
+header{width: 100%;height: 250px; background: url(../images/mitu1.png) no-repeat center center; background-size: 100% 250px}
+
+header ul li{float: left;margin-top: 20px;width: 10%;}
+header ul li:nth-of-type(2){margin-left: 2%}
+header ul li img{width: 80%}
+
+#xm .xm1{padding-top: 10px;background: white;overflow: hidden;padding-left: 4%}
+#xm .xm1 p{font-size: 0.9rem; color:#999999; margin-top: 5px}
+#xm .xm1 p:nth-of-type(2){font-size: 1.3rem;color: #B50606}
+#xm .xm1 p:nth-of-type(2) span{font-size: 1rem;}
+#xm .xm2{margin-top: 10px;background: white;width: 100%}
+#xm .xm2 ul{width: 92%;margin: 0 auto}
+#xm .xm2 ul li{font-size: 0.9rem; padding: 15px 0;border-bottom: 1px solid #EFEFEF}
+#xm .xm2 ul li span{color: #ABABAB}
+#xm .xm2 ul li a{color: #ABABAB}
+#xm .xm3{margin-top: 10px;background: white;width: 92%;padding:10px 4%}
+#xm .xm3 span{vertical-align: top;color: #ABABAB}
+#xm .xm3 ul{display: inline-block;}
+#xm .xm3 ul li span{color: #C9B18F;border: 1px solid #C9B18F;padding: 0 4px; border-radius: 50%;}
+#xm .xm3 ul li{font-size: 0.9rem;margin-top: 8px}
+#xm .xm3 a{color: #ABABAB;display: inline-block;margin-top: 30px}
+
+#nav{margin-top: 10px;background: white;width: 100%; }
+#nav ul{width: 92%;margin: 0 auto;border-bottom: 1px solid #C9B18F;overflow: hidden;}
+#nav ul li{float: left;padding: 10px 5%;}
+#nav ul li a{color:#353535}
+#nav ul li:hover{border-bottom: 2px solid #9D7D4E}
+#goods-detl img{width: 100%;display: block;}
+
+
+#comment{width: 100%;background: white;margin-top: 20px;overflow: hidden;padding-top: 10px}
+#comment .comt-t{width: 92%;margin: 0 auto;overflow: hidden;}
+#comment .comt-t .comt-tl{color: #3D3D3D}
+#comment .comt-t .comt-tr a{color: #A28457}
+#comment .comt1{width: 92%;margin: 20px auto;overflow: hidden; border:1px solid #F2F2F2; background: #F8F8F8;border-radius: 5px}
+#comment .comt1 .cust-info{margin-top: 10px;margin-left: 5%;}
+#comment .comt1 .cust-info img{width: 15%;}
+#comment .comt1 .cust-info span{vertical-align:15px;}
+#comment .comt1 .cust-info span:nth-of-type(2){color: #C19D6B}
+#comment .comt1 p{margin:10px 0 10px 5%}
+#comment .comt1 .cust-info span:nth-of-type(3){color: #EAEAEA;margin-left: -1%}
+.more{text-align: center;font-size: 1.1rem;padding-bottom: 10px}
+.more a{color: #9F8052;}
+#tj{width: 100%; margin-top: 10px;background: white;overflow: hidden;}
+#tj .tj-t{width: 92%;margin: 0 auto;padding-top: 10px}
+#tj .tj-t p{font-size: 1.2rem;border-bottom: 4px solid #9F8257;color: #9F8257;width: 27%;padding: 4px 3%}
+
+
+#tj table{width: 96%;margin: 10px auto}
+#tj table tr td{width: 47%;}
+
+#tj table tr td .recd1{width:100%;height: 150px;}
+#tj table tr td .recd1 .recd1-t{width: 100%;height: 120px;}
+#tj table tr td .recd1 .recd1-t img{width: 100%;height: 100%}
+#tj table tr td .recd1 .recd1-b{width: 100%; height: 30px;font-size: 0.6rem;background: #F5F2F0;color: #696969;line-height: 30px}
+#tj table tr td .recd2{width: 100%;height: 50px;margin-top: 10px}
+#tj table tr td .recd2 .recd2-t{font-size: 0.9rem;color: #3A3A3A}
+#tj table tr td .recd2 .recd2-b{color: red}
+
+
+footer{width: 100%;height: 50px; background: white;position: fixed;bottom: 0; left: 0;}
+footer .footer-l{width: 38%;padding-top: 10px}
+footer .footer-l li{width: 31.3%;float: left;text-align: center;line-height: 30px;height: 30px}
+footer .footer-l li:nth-of-type(2){margin-right: 3%}
+footer .footer-l li a span{display:block;width: 90%;height: 15px;}
+footer .footer-l li:nth-of-type(1) a span{background: url(../images/mitu-icon1.png) no-repeat center center;background-size: 50% 15px;}
+footer .footer-l li:nth-of-type(2) a span{background: url(../images/mitu-icon2.png) no-repeat center center;background-size: 50% 15px;}
+footer .footer-l li:nth-of-type(3) a span{background: url(../images/mitu-icon3.png) no-repeat center center;background-size: 60% 15px;}
+
+
+
+footer .footer-l li:nth-of-type(1):hover a span{background: url(../images/mitu-icon1-1.png) no-repeat center center;background-size: 50% 15px;}
+footer .footer-l li:nth-of-type(2):hover a span{background: url(../images/mitu-icon2-1.png) no-repeat center center;background-size: 50% 15px;}
+footer .footer-l li:nth-of-type(3):hover a span{background: url(../images/mitu-icon3-1.png) no-repeat center center;background-size: 60% 15px;}
+
+footer .footer-l li a p{font-size: 0.7rem;color:#8D8D8D }
+footer .footer-r{width: 58%;padding-top: 10px}
+footer .footer-r p{display: inline-block;background: #B60909;padding: 4px 8%;border-radius: 8%}
+footer .footer-r p:nth-of-type(2){background:#AB8A59 }
+footer .footer-r p a{color: white;font-size: 0.8rem}
+.sub1{width: 100%;height: 50px;}

@@ -1,0 +1,147 @@
+body,div,ul,li,p,input,h6,h3,h1,h2,h5,h4,header,footer{margin: 0; padding: 0}
+a{text-decoration: none;}
+li{list-style: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: ".";/*加一段内容*/
+	display: block;/*让生成的元素以块级元素显示，占满剩余空间*/
+	height: 0; /*避免生成的内容破坏原有布局高度*/
+	clear: both;/*清除浮动*/
+	visibility: hidden;/*让生成的内容不可见*/
+	}
+.clearfix{zoom:1;}
+
+header{width: 100%; height: 150px;background: url(../images/self-bg.jpg) no-repeat center center;overflow: hidden;}
+header .sr{margin-top: 20px;}
+header .sr img{width: 8%;margin-right: 7%}
+
+header .self-info{width: 92%;margin: 10px auto;overflow: hidden;margin-top: 40px}
+
+header .self-info .tx-name{width: 60%;}
+header .self-info .tx-name img{width: 35%;border-radius: 50%}
+header .self-info .tx-name p{display: inline-block; vertical-align: 23px; margin-left: 5%}
+header .self-info .tx-name p a{color: white}
+
+header .self-info .back{margin-top: 21px; width:20%}
+header .self-info .back img{width: 75%}
+
+
+
+
+
+
+#order{width: 94%;margin: 0 auto;overflow: hidden;}
+
+#order .order-t{width: 100%; border-bottom:1px solid #ddd;overflow: hidden;padding:20px 0 }
+#order .order-t h4{font-weight: 600;}
+#order .order-t p a{font-size:0.9rem;color: #999999}
+#order .order-b{width: 100%;}
+#order .order-b ul li{float: left; width: 25%;text-align: center;padding: 15px 0}
+#order .order-b ul li a img{width: 50%; height: 32px;}
+#order .order-b ul li a p{font-size: 0.75rem;color: #626262}
+#order .order-b ul li:hover{background: #F2F2F2}
+#ad{width: 100%}
+#ad img{width:100%;}
+
+
+
+#service{width: 94%;margin: 0 auto;overflow: hidden;}
+
+#service .service-t{width: 100%; border-bottom:1px solid #ddd;overflow: hidden;padding:20px 0 }
+#service .service-t h4{font-weight: 600;}
+#service .service-b{width: 100%;}
+#service .service-b ul{border-bottom:1px solid #ddd;overflow: hidden;}
+#service .service-b ul:nth-of-type(3){border-bottom:none}
+#service .service-b ul li{float: left; width: 25%;text-align: center;padding: 15px 0}
+#service .service-b ul li a img{width: 50%; height: 32px;}
+#service .service-b ul li a p{font-size: 0.75rem;color: #626262}
+#service .service-b ul li:hover{background: #F2F2F2}
+
+
+
+
+
+
+
+
+footer{width: 100%; height: 60px; position: fixed; background: #FAFAFA;bottom: 0px; left: 0}
+.sub2{width: 100%; height: 60px;}
+footer ul li{float: left;  width: 12%; margin-left: 7%; margin-top: 8px}
+
+footer ul li:nth-of-type(1) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_01_0.png) no-repeat center center; background-size: 70% 25px;}
+footer ul li:nth-of-type(2) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_02_0.png) no-repeat center center; background-size: 70% 25px}
+footer ul li:nth-of-type(3) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_03_0.png) no-repeat center center; background-size: 70% 25px}
+footer ul li:nth-of-type(4) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_04_0.png) no-repeat center center; background-size: 70% 25px}
+footer ul li:nth-of-type(5) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_05_0.png) no-repeat center center; background-size: 70% 25px}
+
+footer ul li a{display: block;}
+footer ul li a p{font-size: 0.8rem; text-align: center;color: #999999}
+
+
+footer ul li:nth-of-type(1):hover a span{background: url(../images/tab_01_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(2):hover a span{background: url(../images/tab_02_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(3):hover a span{background: url(../images/tab_03_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(4):hover a span{background: url(../images/tab_04_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(5):hover a span{background: url(../images/tab_05_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:hover a p{color: #3f3f3f}
+
+
+
+
+
+@media(min-width: 400px){
+	header{height: 180px;}
+	header .self-info .tx-name p{vertical-align: 28px;}
+	header .self-info .tx-name p a{font-size: 1.2rem}
+	#order .order-t{padding:25px 0 }
+	#order .order-t h4{font-size: 1.3rem}
+	#order .order-t p a{font-size:1.1rem;}
+	#order .order-b ul li{padding: 20px 0}
+	#order .order-b ul li a img{width: 55%; height: 42px;}
+	#order .order-b ul li a p{font-size: 0.9rem;}
+	#service .service-t{padding:25px 0 }
+	#service .service-t h4{font-size: 1.3rem}
+	#service .service-b ul li{padding: 20px 0}
+	#service .service-b ul li a img{width: 55%; height: 42px;}
+	#service .service-b ul li a p{font-size: 0.9rem;}
+
+}
+@media(min-width: 768px){
+
+	header{height: 280px;background-size: 110% 280px}
+	header .self-info .tx-name p{vertical-align: 53px;}
+	header .self-info .tx-name p a{font-size: 1.8rem}
+	header .self-info .back{margin-top: 35px; }
+	header .self-info .back img{width: 70%}
+	#order .order-t{padding:45px 0 }
+	#order .order-t h4{font-size: 2rem}
+	#order .order-t p a{font-size:1.8rem;}
+	#order .order-b ul li{padding: 20px 0}
+	#order .order-b ul li a img{width: 55%; height: 82px;}
+	#order .order-b ul li a p{font-size: 1.6rem;}
+	#service .service-t{padding:45px 0 }
+	#service .service-t h4{font-size: 2rem}
+	#service .service-b ul li{padding: 30px 0}
+	#service .service-b ul li a img{width: 55%; height: 82px;}
+	#service .service-b ul li a p{font-size: 1.6rem;}
+
+
+footer{height: 160px;}
+.sub2{height: 160px;}
+footer ul li{float: left;  width: 12%; margin-left: 7%; margin-top: 38px}
+
+footer ul li:nth-of-type(1) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_01_0.png) no-repeat center center; background-size: 70% 55px;}
+footer ul li:nth-of-type(2) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_02_0.png) no-repeat center center; background-size: 70% 55px}
+footer ul li:nth-of-type(3) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_03_0.png) no-repeat center center; background-size: 70% 55px}
+footer ul li:nth-of-type(4) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_04_0.png) no-repeat center center; background-size: 70% 55px}
+footer ul li:nth-of-type(5) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_05_0.png) no-repeat center center; background-size: 70% 55px}
+
+footer ul li a p{font-size: 1.4rem;}
+
+
+footer ul li:nth-of-type(1):hover a span{background: url(../images/tab_01_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(2):hover a span{background: url(../images/tab_02_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(3):hover a span{background: url(../images/tab_03_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(4):hover a span{background: url(../images/tab_04_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(5):hover a span{background: url(../images/tab_05_1.png) no-repeat center center;background-size: 70% 55px;}
+}

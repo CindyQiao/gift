@@ -1,0 +1,61 @@
+body,div,ul,li,p,input,h6,h4,header,footer{margin: 0; padding: 0}
+a{text-decoration: none;}
+li{list-style: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: ".";/*加一段内容*/
+	display: block;/*让生成的元素以块级元素显示，占满剩余空间*/
+	height: 0; /*避免生成的内容破坏原有布局高度*/
+	clear: both;/*清除浮动*/
+	visibility: hidden;/*让生成的内容不可见*/
+	}
+.clearfix{zoom:1;}
+
+
+
+
+header{width: 94%; margin: 10px auto; overflow: hidden;}
+header a img{width: 5%; margin-top: 5px}
+header div img{width: 25%;margin-left: 37%}
+
+
+main{width: 78%; margin: 20px auto; overflow: hidden;}
+main input{font-size: 1.2rem; width: 100%; border: none; border-bottom: 1px solid #ddd; padding: 8px 0; outline: none; margin-top: 20px}
+main a input{margin-top:20px; border-radius: 5px;background: #D8CFC7;color: #ECE7E3;letter-spacing: 2px}
+main a:nth-of-type(2) input{border-radius: 5px;color: #7E5836;background: white;border: 1px solid #9C7F65}
+article{width: 48%; margin: 0 auto}
+article a{color:  #7E5836; font-size: 0.8rem}
+article span{color:  #7E5836; font-size: 0.8rem}
+
+footer{text-align: center;}
+footer .way{height: 60px;line-height: 60px;text-align: center;}
+footer .way .line{display: inline-block;width: 20%;border-top: 1px solid #DDD6D0}
+footer .way .txt{color: #D9D1C9;vertical-align:-5px;font-size: 0.7rem}
+footer .way-logo{display: block;width: 20%;height: 40px; background: url(../images/wx_unpressed.png) no-repeat center center;margin-left: 40%; background-size: 90% 55px}
+
+footer .way-logo:hover{ background: url(../images/wx_pressed.png) no-repeat center center;background-size: 90% 55px}
+footer p{font-size: 0.7rem; color:#D9D1C9 }
+
+@media(min-width: 360px){
+	article{width: 46%; margin-left: 28%}
+	article a{ font-size: 0.9rem}
+	article span{font-size: 0.9rem}
+}
+@media(min-width: 410px){
+	article{margin-left: 31%}
+}
+@media(min-width: 768px){
+	main input{font-size: 1.5rem; padding: 16px 0;}
+	main a input{margin-top:40px;}
+	article{width: 48%; margin: 50px 0 30px 33%;}
+	article a{font-size: 1.4rem}
+	article span{font-size: 1.4rem}
+
+	footer .way .txt{vertical-align:-8px;font-size: 1.4rem}
+	footer .way-logo{display: block;width: 20%;height: 40px; background: url(../images/wx_unpressed.png) no-repeat center center;margin-left: 40%; background-size: 88% 85px; margin-top: 10px}
+
+	footer .way-logo:hover{ background: url(../images/wx_pressed.png) no-repeat center center;background-size: 88% 85px}
+	footer p{font-size: 1.3rem;}
+}
+
+

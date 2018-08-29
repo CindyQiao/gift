@@ -1,0 +1,173 @@
+body,div,ul,li,p,input,h6,h3,h1,h2,h5,h4,header,footer{margin: 0; padding: 0}
+a{text-decoration: none;}
+li{list-style: none;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: ".";/*加一段内容*/
+	display: block;/*让生成的元素以块级元素显示，占满剩余空间*/
+	height: 0; /*避免生成的内容破坏原有布局高度*/
+	clear: both;/*清除浮动*/
+	visibility: hidden;/*让生成的内容不可见*/
+	}
+.clearfix{zoom:1;}
+
+
+header{width: 100%;border-bottom:1px solid #BFBFC0;position: fixed;background: white}
+#container{width: 92%; height: 30px; margin: 20px auto; vertical-align: middle;line-height: 30px}
+header li{float: left; width: 33.3%;}
+header li img{width: 20%}
+header li:nth-child(2){text-align: center;font-size: 1.1rem;color: #343434}
+header li:last-child{text-align: right;font-size: 0.9rem}
+header li:last-child a{color: #343434}
+.sub1{width: 100%; height: 70px;}
+#shop{width: 92%; margin: 0 auto;height: 25px;border-bottom:1px solid #BFBFC0;padding: 20px 0}
+#shop .shop-name{font-size: 0.9rem}
+#shop .shop-name span{background: #D54843;color: white;padding: 0 4px;border-radius: 50%}
+#shop .fee{font-size: 0.8rem; color: #939393}
+#shop .fee span{padding: 0 6px; border: 1px solid #939393;border-radius: 50%;}
+
+
+#goods{width: 92%; height: 140px;margin: 0 auto;border-bottom:1px solid #939393;}
+#goods .goods1{display: inline-block;line-height: 140px;vertical-align: middle;width:7%; }
+#goods .goods1 span{background: #D54843;color: white;padding: 0 4px;border-radius: 50%}
+#goods .goods2{display: inline-block;width: 36%;height: 140px;line-height: 140px;vertical-align: middle;}
+#goods .goods2 img{width: 90%;line-height: 140px;vertical-align: middle;}
+#goods .goods3{float: right; width: 55%;height: 140px;}
+#goods .goods3 p{margin-top: 25px; margin-right: 20%; color: black}
+#goods .goods3 .goods3-b{margin-top: 30px}
+#goods .goods3 .goods3-b span{color: red; font-size: 0.9rem}
+#goods .goods3 .goods3-b img{width: 60%;margin-left: 15%}
+
+
+#way{height: 60px;line-height: 60px;text-align: center;background: #F3F3F3;}
+#way .line{display: inline-block;width: 20%;border-top: 1px solid #856040}
+#way .txt{color: #856040;vertical-align:-5px;font-size: 1.1rem;letter-spacing: 2px}
+
+#recd{width: 94%; margin: 0 auto}
+#recd table{width: 100%}
+#recd table tr td{width: 47%;}
+
+#recd table tr td .recd1{width:100%;height: 150px;}
+#recd table tr td .recd1 .recd1-t{width: 100%;height: 120px;}
+#recd table tr td .recd1 .recd1-t img{width: 100%;height: 100%}
+#recd table tr td .recd1 .recd1-b{width: 100%; height: 30px;font-size: 0.6rem;background: #F5F2F0;color: #696969;line-height: 30px}
+#recd table tr td .recd2{width: 100%;height: 50px;margin-top: 10px}
+#recd table tr td .recd2 .recd2-t{font-size: 0.9rem;color: #3A3A3A}
+#recd table tr td .recd2 .recd2-b{color: red}
+
+
+#price{width: 100%;height: 60px;position: fixed;background: white;bottom: 60px;left: 0; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.sub3{width: 100%;height: 60px;}
+#price .choose{line-height: 60px}
+#price .choose span:nth-of-type(1){background: red; color: white;border-radius: 50%; padding: 0 4px;}
+#price .choose span:nth-of-type(2){font-size: 0.9rem;}
+#price .total{line-height: 60px}
+#price .total p{display: inline-block;}
+#price .total p:nth-of-type(1){font-size: 0.9rem;}
+#price .total p:nth-of-type(1) span{color: red}
+#price .total p:nth-of-type(2){background: red;padding: 0 8px}
+#price .total p:nth-of-type(2) a{color: white;}
+
+
+
+
+
+
+footer{width: 100%; height: 60px; position: fixed; background: #FAFAFA;bottom: 0px; left: 0}
+.sub2{width: 100%; height: 60px;}
+footer ul li{float: left;  width: 12%; margin-left: 7%; margin-top: 8px}
+
+footer ul li:nth-of-type(1) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_01_0.png) no-repeat center center; background-size: 70% 25px;}
+footer ul li:nth-of-type(2) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_02_0.png) no-repeat center center; background-size: 70% 25px}
+footer ul li:nth-of-type(3) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_03_0.png) no-repeat center center; background-size: 70% 25px}
+footer ul li:nth-of-type(4) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_04_0.png) no-repeat center center; background-size: 70% 25px}
+footer ul li:nth-of-type(5) a span{display: block;width: 100%; height: 30px;background: url(../images/tab_05_0.png) no-repeat center center; background-size: 70% 25px}
+
+footer ul li a{display: block;}
+footer ul li a p{font-size: 0.8rem; text-align: center;color: #999999}
+
+
+footer ul li:nth-of-type(1):hover a span{background: url(../images/tab_01_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(2):hover a span{background: url(../images/tab_02_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(3):hover a span{background: url(../images/tab_03_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(4):hover a span{background: url(../images/tab_04_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:nth-of-type(5):hover a span{background: url(../images/tab_05_1.png) no-repeat center center;background-size: 70% 25px;}
+footer ul li:hover a p{color: #3f3f3f}
+
+
+
+
+
+
+@media(min-width: 768px){
+	
+	#container{height: 60px; line-height: 60px}
+	header li:nth-child(2){font-size: 1.6rem;}
+	header li:last-child{font-size: 1.4rem}
+	.sub1{width: 100%; height: 100px;}
+	#shop{height: 50px;padding: 40px 0;line-height: 50px}
+	#shop .shop-name{font-size: 1.6rem}
+	#shop .shop-name span{padding: 0 6px;}
+	#shop .fee{font-size: 1.4rem;}
+	#shop .fee span{padding: 0 10px;}
+	#goods{height: 240px;}
+	#goods .goods1{line-height: 240px;}
+	#goods .goods1 span{background: #D54843;color: white;padding: 0 4px;border-radius: 50%}
+#goods .goods2{width: 40%;height: 240px;line-height: 240px;}
+#goods .goods2 img{width: 70%;line-height: 240px;}
+#goods .goods3{width: 52%;height: 240px;}
+#goods .goods3 p{margin-top: 35px; margin-right: 25%; font-size: 1.8rem}
+#goods .goods3 .goods3-b{margin-top: 80px}
+#goods .goods3 .goods3-b span{font-size: 1.6rem}
+#goods .goods3 .goods3-b img{width: 50%;margin-left: 25%}
+
+
+#way{height: 150px;line-height: 150px;}
+#way .line{width: 30%;}
+#way .txt{vertical-align:-7px;font-size: 2rem;}
+
+
+
+
+#recd table tr td .recd1{width:100%;height: 280px;}
+#recd table tr td .recd1 .recd1-t{width: 100%;height: 210px;}
+#recd table tr td .recd1 .recd1-t img{width: 100%;height: 100%}
+#recd table tr td .recd1 .recd1-b{width: 100%; height: 70px;font-size: 1.4rem;line-height: 70px}
+
+#recd table tr td .recd2{width: 100%;height: 100px;margin-top: 30px}
+#recd table tr td .recd2 .recd2-t{font-size: 1.7rem;}
+#recd table tr td .recd2 .recd2-b{font-size: 1.5rem;margin-top: 10px}
+
+
+#price{height: 160px;bottom: 160px;left: 0; }
+.sub3{width: 100%;height: 160px;}
+#price .choose{line-height: 160px; padding-left: 5%}
+#price .choose span:nth-of-type(1){font-size: 1.2rem}
+#price .choose span:nth-of-type(2){font-size: 1.8rem;}
+#price .total{line-height: 160px}
+#price .total p:nth-of-type(1){font-size: 1.7rem;}
+#price .total p:nth-of-type(2) a{color: white; font-size:1.7rem; }
+
+
+
+	
+
+footer{height: 160px;}
+.sub2{height: 160px;}
+footer ul li{float: left;  width: 12%; margin-left: 7%; margin-top: 38px}
+
+footer ul li:nth-of-type(1) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_01_0.png) no-repeat center center; background-size: 70% 55px;}
+footer ul li:nth-of-type(2) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_02_0.png) no-repeat center center; background-size: 70% 55px}
+footer ul li:nth-of-type(3) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_03_0.png) no-repeat center center; background-size: 70% 55px}
+footer ul li:nth-of-type(4) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_04_0.png) no-repeat center center; background-size: 70% 55px}
+footer ul li:nth-of-type(5) a span{display: block;width: 100%; height: 55px;background: url(../images/tab_05_0.png) no-repeat center center; background-size: 70% 55px}
+
+footer ul li a p{font-size: 1.4rem;}
+
+
+footer ul li:nth-of-type(1):hover a span{background: url(../images/tab_01_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(2):hover a span{background: url(../images/tab_02_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(3):hover a span{background: url(../images/tab_03_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(4):hover a span{background: url(../images/tab_04_1.png) no-repeat center center;background-size: 70% 55px;}
+footer ul li:nth-of-type(5):hover a span{background: url(../images/tab_05_1.png) no-repeat center center;background-size: 70% 55px;}
+}
